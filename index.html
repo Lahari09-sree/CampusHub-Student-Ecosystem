@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-loader" id="loader">
+    <div class="page-loader-circle"></div>
+</div>
+<!-- Back To Top -->
+
+<button id="topBtn">↑</button>
+
+
+<div class="progress-bar" id="progressBar"></div>    
+    <!-- Loader -->
+
+
+<header>
+    <h1 class="logo">CampusHub</h1>
+    <div class="menu-toggle" id="menuToggle">
+    ☰
+</div>
+
+<nav id="navMenu">
+
+    <a href="#">Home</a>
+
+    <a href="#marketplace">
+        Marketplace
+    </a>
+
+    <a href="#skills">
+        Skills
+    </a>
+
+    <a href="#collaboration">
+        Collaboration
+    </a>
+
+    <a href="#subscriptions">
+    Subscriptions
+    </a>
+
+    <a href="#notes">
+        Resources
+    </a>
+
+    <a href="#dashboard">
+        Dashboard
+    </a>
+
+    <button id="darkModeToggle">
+        🌙
+    </button>
+
+    <span class="wishlist-count">
+        ❤️ <b id="wishlistNumber">0</b>
+    </span>
+
+    <a href="#login" id="loginBtn">
+        Login
+    </a>
+
+    <a href="#" class="nav-btn" id="joinBtn">
+        Join Now
+    </a>
+
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <span class="tagline">
+            Verified Student Ecosystem Platform
+        </span>
+
+        <h2>
+            Buy, Rent, Learn & Collaborate with Students
+        </h2>
+
+        <p>
+            A modern student platform for marketplace, skills, collaboration,
+            resources, travel buddies, study partners, and campus opportunities —
+            all in one trusted place.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="primary-btn" id="getStartedBtn">
+                Get Started
+            </button>
+
+            <button class="secondary-btn" id="exploreBtn">
+                Explore Platform
+            </button>
+        </div>
+
+        <img 
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+            alt="Students collaborating on campus"
+            class="hero-image"
+        >
+
+    </div>
+</section>
+<section class="main-modules">
+    <h2>Explore CampusHub</h2>
+    <p class="section-subtitle">
+        Everything students need for learning, earning, sharing, and connecting.
+    </p>
+
+    <div class="module-container">
+
+        <div class="module-card">
+            <span>🛒</span>
+            <h3>Marketplace</h3>
+            <p>Buy, sell, rent products, and manage listings safely.</p>
+        </div>
+
+        <div class="module-card">
+            <span>💼</span>
+            <h3>Skills & Services</h3>
+            <p>Offer resume help, coding support, teaching, and editing services.</p>
+        </div>
+
+        <div class="module-card">
+            <span>🤝</span>
+            <h3>Collaboration Hub</h3>
+            <p>Find study partners, teammates, and travel buddies.</p>
+        </div>
+
+        <div class="module-card">
+            <span>📚</span>
+            <h3>Academic Resources</h3>
+            <p>Share notes, PPTs, assignments, and previous papers.</p>
+        </div>
+
+        <div class="module-card">
+            <span>🎬</span>
+            <h3>Subscription Split Hub</h3>
+            <p>Find trusted students to split eligible OTT, learning, and productivity subscription costs.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ADD MARKETPLACE SECTION HERE -->
+
+<section class="marketplace-section reveal" id="marketplace">
+    <h2>Student Marketplace</h2>
+    <p class="section-subtitle">Buy, sell, or rent useful student items.</p>
+<div class="marketplace-actions">
+    <button class="upload-btn" id="uploadBtn">+ Upload Product</button>
+    <button class="upload-btn" id="showAllProductsBtn">Show All Products</button>
+</div>
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Search products..." 
+        class="search-box"
+        autocomplete="off"
+    >
+
+    <div class="filter-buttons">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="electronics">Electronics</button>
+        <button class="filter-btn" data-category="books">Books</button>
+        <button class="filter-btn" data-category="rental">Rentals</button>
+    </div>
+<div class="marketplace-container">
+
+<div class="market-card" data-category="electronics">
+
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop">
+
+    <button class="wishlist-btn">♡</button>
+
+    <h3>Laptop for Rent</h3>
+
+    <p>₹300/day</p>
+
+    <button class="market-btn">View Details</button>
+
+</div>
+
+<div class="market-card" data-category="books">
+
+    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Books">
+
+    <button class="wishlist-btn">♡</button>
+
+    <h3>Engineering Books</h3>
+
+    <p>₹500</p>
+
+    <button class="market-btn">View Details</button>
+
+</div>
+
+<div class="market-card" data-category="rental">
+
+    <img src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd" alt="Camera">
+
+    <button class="wishlist-btn">♡</button>
+
+    <h3>DSLR Camera</h3>
+
+    <p>₹400/day</p>
+
+    <button class="market-btn">View Details</button>
+
+</div>
+
+    </div>
+</section>
+
+<section class="jobs-section" id="skills">
+
+    <h2>Skills & Services</h2>
+
+    <p class="section-subtitle">
+        Offer and discover student services like tutoring, editing, resume help, coding support, and freelancing.
+    </p>
+
+    <div class="jobs-container">
+
+        <div class="job-card">
+            <h3>Content Writer</h3>
+            <p>Remote • ₹5,000/month</p>
+            <button class="market-btn">Apply</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Video Editor</h3>
+            <p>Part-Time • Flexible Hours</p>
+            <button class="market-btn">Apply</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Python Tutor</h3>
+            <p>Teach Juniors • Earn Credits + Money</p>
+            <button class="market-btn">Apply</button>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="team-section reveal" id="collaboration">
+    <h2>Collaboration Hub</h2>
+    <p class="section-subtitle">
+        Find teammates for hackathons, projects, startups, competitions, and events.
+    </p>
+
+    <div class="team-container">
+
+        <div class="team-card">
+            <h3>Hackathon Team</h3>
+            <p>Looking for frontend + backend teammates.</p>
+            <button class="market-btn">Join Team</button>
+        </div>
+
+        <div class="team-card">
+            <h3>Mini Project Group</h3>
+            <p>Need members for AI/ML project work.</p>
+            <button class="market-btn">Join Team</button>
+        </div>
+
+        <div class="team-card">
+            <h3>Startup Idea Team</h3>
+            <p>Looking for design, coding, and marketing students.</p>
+            <button class="market-btn">Join Team</button>
+        </div>
+
+    </div>
+</section>
+<section class="subscriptions-section reveal" id="subscriptions">
+    <h2>Subscription Split Hub</h2>
+
+    <p class="section-subtitle">
+        Save money by joining trusted student groups for eligible OTT, learning,
+        music, and productivity subscriptions using official group or student plans.
+    </p>
+    <div class="subscriptions-container">
+
+    <div class="subscription-card">
+        <span>🎬</span>
+        <h3>OTT & Streaming</h3>
+        <p>
+            Find students interested in splitting eligible streaming plans
+            like movies, shows, and entertainment subscriptions.
+        </p>
+        <button class="market-btn">Create Group</button>
+    </div>
+
+    <div class="subscription-card">
+        <span>📚</span>
+        <h3>Learning Platforms</h3>
+        <p>
+            Share the cost of learning tools, online courses, coding platforms,
+            and study resources with classmates.
+        </p>
+        <button class="market-btn">Join Group</button>
+    </div>
+
+    <div class="subscription-card">
+        <span>💳</span>
+        <h3>Payment Tracking</h3>
+        <p>
+            Track monthly contributions, members, and due dates clearly
+            so everyone knows who has paid.
+        </p>
+        <button class="market-btn">Track Payments</button>
+    </div>
+
+</div>
+
+    <p class="subscription-note">
+        Note: Students should use only official family, group, or student plans.
+        Direct password sharing is not encouraged.
+    </p>
+    <h3 class="created-groups-title">Available Subscription Groups</h3>
+
+    <div class="created-subscription-groups" id="createdSubscriptionGroups">
+        <!-- Created groups will appear here -->
+    </div>
+
+    <h3 class="created-groups-title">My Subscription Join Requests</h3>
+
+    <div class="subscription-requests-container" id="subscriptionRequestsContainer">
+        <!-- Join requests will appear here -->
+    </div>
+
+</section>
+<section class="notes-section reveal" id="notes">
+
+    <h2>Notes & Study Resources</h2>
+
+    <p class="section-subtitle">
+        Access notes, assignments, PPTs, and previous papers shared by students.
+    </p>
+
+    <div class="notes-container">
+
+        <div class="note-card">
+            <h3>DBMS Notes</h3>
+            <p>Unit-wise handwritten notes for exams.</p>
+            <button class="market-btn">Download</button>
+        </div>
+
+        <div class="note-card">
+            <h3>Python PPTs</h3>
+            <p>Presentation slides for Python programming.</p>
+            <button class="market-btn">View</button>
+        </div>
+
+        <div class="note-card">
+            <h3>Previous Papers</h3>
+            <p>Last 5 years university exam papers.</p>
+            <button class="market-btn">Access</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Popup Modal -->
+
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <span class="close-btn" id="closePopup">&times;</span>
+
+        <h2>Product Details</h2>
+
+        <p id="popupText">
+            Product information will appear here.
+        </p>
+
+    </div>
+
+</div>
+<!-- Login Modal -->
+
+<div class="auth-modal" id="authModal">
+
+    <div class="auth-box">
+
+        <span class="close-auth" id="closeAuth">&times;</span>
+
+        <h2>Login to CampusHub</h2>
+
+        <form class="auth-form">
+
+            <input type="email" id="authEmail" placeholder="Enter Email">
+            <input type="password" id="authPassword" placeholder="Enter Password">
+           <button type="submit" class="primary-btn" id="authSubmitBtn">
+               Login
+           </button>
+
+        </form>
+
+        <p class="switch-text">
+            Don't have an account?
+            <span id="showSignup">Sign Up</span>
+
+            <span id="showLogin">Login</span>
+        </p>
+
+    </div>
+
+</div>
+<!-- Subscription Group Modal -->
+
+<div class="subscription-modal" id="subscriptionModal">
+    <div class="subscription-box">
+        <span class="close-subscription" id="closeSubscription">&times;</span>
+
+        <h2>Create Subscription Group</h2>
+
+        <form class="subscription-form" autocomplete="off">
+            <input type="text" id="subscriptionName" placeholder="Subscription Name e.g. Netflix, Coursera" required>
+
+            <select id="subscriptionCategory" required>
+                <option value="">Select Category</option>
+                <option value="OTT">OTT & Streaming</option>
+                <option value="Learning">Learning Platform</option>
+                <option value="Music">Music</option>
+                <option value="Productivity">Productivity</option>
+            </select>
+
+            <input type="number" id="subscriptionMembers" placeholder="Number of Members Needed" required>
+
+            <input type="text" id="subscriptionCost" placeholder="Cost per Member e.g. ₹100/month" required>
+
+            <textarea id="subscriptionDesc" placeholder="Group details and rules" required></textarea>
+
+            <button type="submit" class="upload-submit-btn">Create Group</button>
+        </form>
+    </div>
+</div>
+
+<!-- Product Upload Modal -->
+
+<div class="upload-modal" id="uploadModal">
+    <div class="upload-box">
+        <span class="close-upload" id="closeUpload">&times;</span>
+
+        <h2>Upload Product</h2>
+
+        <form class="upload-form" autocomplete="off">
+            <input type="text" id="productName" placeholder="Product Name" required>
+            <input type="text" id="productPrice" placeholder="Price / Rent" required>
+            <input type="text" id="productImage" placeholder="Image URL" required>
+            <textarea id="productDesc" placeholder="Product Description" required></textarea>
+
+            <button type="submit" class="upload-submit-btn">Add Product</button>
+            </form>
+    </div>
+</div>
+<section class="dashboard reveal" id="dashboard">
+    <h2>Student Dashboard Preview</h2>
+
+    <div class="dashboard-container">
+
+        <div class="dashboard-card">
+            <h3>👤 Profile</h3>
+            <p>Manage your student profile and verification.</p>
+        </div>
+
+        <div class="dashboard-card" id="myListingsCard">
+            <h3>🛒 My Listings</h3>
+            <p>View products you uploaded for rent or sale.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>❤️ Wishlist</h3>
+            <p>See all your saved marketplace items.</p>
+        </div>
+
+        <div class="dashboard-card" id="mySubscriptionGroupsCard">
+            <h3>🎬 My Subscription Groups</h3>
+            <p>Manage the subscription groups you created or joined.</p>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>💰 Credits</h3>
+            <p>Your current balance:</p>
+            <h2 id="creditBalance">0</h2>
+        </div>
+
+    </div>
+</section>
+<section class="safety-section">
+    <h2>Safe & Verified Student Community</h2>
+    <p class="section-subtitle">
+        CampusHub is designed to keep student interactions trusted and secure.
+    </p>
+
+    <div class="safety-container">
+
+        <div class="safety-card">
+            <h3>📧 College Email</h3>
+            <p>Students can verify using their official college email.</p>
+        </div>
+
+        <div class="safety-card">
+            <h3>🪪 Student ID</h3>
+            <p>Student ID verification helps reduce fake accounts.</p>
+        </div>
+
+        <div class="safety-card">
+            <h3>📱 Phone Number</h3>
+            <p>Phone verification improves trust and communication.</p>
+        </div>
+
+        <div class="safety-card">
+            <h3>🔐 Safe Subscription Sharing</h3>
+            <p>
+               Students should use only official family, group, or student plans.
+               Direct password sharing is not encouraged.
+            </p>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h2>CampusHub</h2>
+            <p>Built for students, by students.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#marketplace">Marketplace</a>
+            <a href="#skills">Skills</a>
+            <a href="#collaboration">Collaboration</a>
+            <a href="#subscriptions">Subscriptions</a>
+            <a href="#notes">Resources</a>
+            <a href="#dashboard">Dashboard</a>
+        </div>
+
+        <div>
+            <h3>Student Services</h3>
+            <p>Marketplace</p>
+            <p>Skills & Services</p>
+            <p>Collaboration Hub</p>
+            <p>Subscription Split Hub</p>
+            <p>Notes & Resources</p>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+            <p>Email: support@campushub.com</p>
+            <p>India</p>
+        </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 CampusHub. All rights reserved.</p>
+</footer>
+<div id="notification"></div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  deleteDoc,
+  doc,
+  setDoc,
+  updateDoc,
+  increment,
+  getDoc
+} from "https://www.gstatic.com/firebasejs/12.3.0/firebase-firestore.js";
+
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut
+} from "https://www.gstatic.com/firebasejs/12.3.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDAl4rKDN15YGHbF_xDcoB-zpQxnEz7BWI",
+  authDomain: "campushub-e0878.firebaseapp.com",
+  projectId: "campushub-e0878",
+  storageBucket: "campushub-e0878.firebasestorage.app",
+  messagingSenderId: "828073506035",
+  appId: "1:828073506035:web:40030ec9d7c1a49c7db386"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
+
+window.db = db;
+window.auth = auth;
+
+window.collection = collection;
+window.addDoc = addDoc;
+window.getDocs = getDocs;
+window.deleteDoc = deleteDoc;
+window.doc = doc;
+window.setDoc = setDoc;
+window.updateDoc = updateDoc;
+window.increment = increment;
+window.getDoc = getDoc;
+window.createUserWithEmailAndPassword = createUserWithEmailAndPassword;
+window.signInWithEmailAndPassword = signInWithEmailAndPassword;
+window.onAuthStateChanged = onAuthStateChanged;
+window.signOut = signOut;
+window.saveUserProfile = async function (user) {
+  await setDoc(doc(db, "users", user.uid), {
+    uid: user.uid,
+    email: user.email,
+    credits: 0,
+    role: "student",
+    createdAt: new Date()
+  });
+};
+
+console.log("Firebase Connected Successfully");
+window.dispatchEvent(new Event("firebase-ready"));
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
